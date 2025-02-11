@@ -10,3 +10,13 @@ const btn1 = document.getElementById("btn1").addEventListener('click', ()=>{
     });
     console.log(`El resultado es : ${sum} // [${resultado}]`);
 });
+
+/* const obj = { a: "uno", b: "dos", c: "tres" };
+const btn2 = document.getElementById("btn2").addEventListener('click', ()=>{
+    let invert ={};
+    for (let clave in obj) { // clave nos da el nombre de las claves / obj[clave] el valor de esa clave
+        console.log(Object.keys(obj));
+        invert[obj][claves] = claves;
+    }
+    console.log(invert);
+}); */
