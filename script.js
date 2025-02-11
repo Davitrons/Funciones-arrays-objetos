@@ -87,3 +87,14 @@ const btn5 = document.getElementById("btn5").addEventListener("click", () => {
 
   console.log((obj = { suma: sum, promedio: prome, menor: min, mayor: max}));
 });
+
+const estudiantes = [
+    { nombre: "Laura", edad: 22, curso: "Matemáticas" },
+    { nombre: "Carlos", edad: 25, curso: "Física" },
+    { nombre: "Marta", edad: 20, curso: "Programación" }
+];
+const btn6 = document.getElementById("btn6").addEventListener("click", () => {
+    estudiantes.forEach(estudiante => {
+        console.log(`${estudiante.nombre} tiene ${estudiante.edad} años y está inscrito en el curso de ${estudiante.curso}`);
+    });
+});
