@@ -23,7 +23,7 @@ const btn2 = document.getElementById("btn2").addEventListener('click', ()=>{
 
 const arrayVariado = [1, "hola", true, 42, false, "mundo", null, undefined];
 const btn4 = document.getElementById("btn4").addEventListener("click", () => {
-  let obj={}  
+  let obj = {};
   let contnum = 0,
     contstring = 0,
     contbool = 0,
@@ -56,5 +56,34 @@ const btn4 = document.getElementById("btn4").addEventListener("click", () => {
     }
   });
 
-  console.log(obj = {number : contnum, string:contstring, boolean:contbool, objetc:contobj, undefined:contundefined});
+  console.log(
+    (obj = {
+      number: contnum,
+      string: contstring,
+      boolean: contbool,
+      objetc: contobj,
+      undefined: contundefined,
+    })
+  );
+});
+
+const btn5 = document.getElementById("btn5").addEventListener("click", () => {
+  let arrayNumeros = [4, 8, 15, 16, 23, 42];
+  let obj = {};
+
+  let sum = 0,
+    prome = 0,
+    max = arrayNumeros[0],
+    min = arrayNumeros[0];
+
+  arrayNumeros.forEach((el) => {
+    sum += el;
+
+    if (el < min) min = el;
+    if (el > max) max = el;
+  });
+
+  prome = sum / arrayNumeros.length;
+
+  console.log((obj = { suma: sum, promedio: prome, menor: min, mayor: max}));
 });
